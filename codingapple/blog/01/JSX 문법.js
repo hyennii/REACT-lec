@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 
-  let post = '강남 우동 맛집';
+  let post = '강남 맛집';
 
   return (
     <div className="App">
