@@ -27,3 +27,38 @@
 <h4>변수가 있는데 왜 state를 써야하는지?</h4>
  : 일반 변수가 갑자기 변경되면 html에 자동으로 반영 안되지만, state 쓰던 html은 자동 재렌더링되기 때문
  
+--------------------------------
+
+*<h4>숙제</h4>*
+state를 이용해 블로그 목록 3개 만들기
+
+```javaScript
+function App() {
+
+  let post = 'REACT BLOG';
+  let [a, b] = useState('연남동 카페 추천');
+  let [c, d] = useState('한남동 카페 추천');
+  let [e, f] = useState('성수동 카페 추천');
+
+
+  return (
+    <div className="App">
+      <div className="sky-nav">
+        <h4>{post}</h4>
+      </div>
+      <div className="list">
+        <h4>{a}</h4>
+        <p>5월 8일 발행</p>
+      </div>
+      <div className="list">
+        <h4>{c}</h4>
+        <p>5월 8일 발행</p>
+      </div>
+      <div className="list">
+        <h4>{e}</h4>
+        <p>5월 8일 발행</p>
+      </div>
+    </div>
+  );
+}
+```
