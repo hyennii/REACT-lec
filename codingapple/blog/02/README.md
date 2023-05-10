@@ -36,9 +36,7 @@ state를 이용해 블로그 목록 3개 만들기
 function App() {
 
   let post = 'REACT BLOG';
-  let [a, b] = useState('연남동 카페 추천');
-  let [c, d] = useState('한남동 카페 추천');
-  let [e, f] = useState('성수동 카페 추천');
+  let [a, b] = useState(['연남동 카페 추천','한남동 카페 추천','성수동 카페 추천']);
 
 
   return (
@@ -47,15 +45,15 @@ function App() {
         <h4>{post}</h4>
       </div>
       <div className="list">
-        <h4>{a}</h4>
+        <h4>{a[0]}</h4>
         <p>5월 8일 발행</p>
       </div>
       <div className="list">
-        <h4>{c}</h4>
+        <h4>{a[1]}</h4>
         <p>5월 8일 발행</p>
       </div>
       <div className="list">
-        <h4>{e}</h4>
+        <h4>{a[2]}</h4>
         <p>5월 8일 발행</p>
       </div>
     </div>
