@@ -67,3 +67,21 @@
 
 *<h4>숙제</h4>*
 좋아요 갯수 개별로 기록하기
+
+```javaScript
+  let [good, good변경] = useState([0,0,0]);
+
+{
+        a.map(function(a, i){
+          return (<div className="list" key={i}>
+        <h4>{a} <span onClick={()=>{
+          let copy = [...good];
+          copy[i] = copy[i] + 1;
+          good변경(copy)
+          }}>👍🏻</span> {good[i]}
+        </h4>
+        <p>5월 8일 발행</p>
+      </div>)
+        })
+      }
+```
