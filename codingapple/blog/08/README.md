@@ -50,3 +50,20 @@
 
 *<h4>숙제</h4>*
 글수정 버튼 누르면 첫 글제목이 '라떼맛집'으로 바뀌도록 (props 사용)
+
+```javaScript
+    {
+        modal == true ? <Modal 글제목변경={글제목변경} cafe={a}></Modal> : null
+      }
+      
+  function Modal(props){
+  return(
+    <div class="modal">
+        <h4>{props.cafe[0]}</h4>
+        <p>날짜</p>
+        <p>상세내용</p>
+        <button onClick={()=>{props.글제목변경(['라떼맛집','아아맛집','스무디맛집'])}}>글수정</button>
+    </div>
+  )
+}
+```
