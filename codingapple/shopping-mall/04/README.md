@@ -23,7 +23,7 @@
   
   라이브러리 사용은 외우는것이 아닌 각 페이지에서 검색하여 입력
   
-- import {Routes, Route, Link} from 'react-router-dom' import 하기
+- import {Routes, Route, Link} from 'react-router-dom' import 하기(App.js 로 돌아와서)
 - Routes 태그 안에 Route 태그 넣어주기(Route는 만드려는 페이지)
 - 누군가 /detail 로 들어오면 상세페이지를 보여주고 싶을 때
  
