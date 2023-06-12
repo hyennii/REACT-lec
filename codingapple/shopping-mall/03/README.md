@@ -42,3 +42,63 @@ array처럼 변수 하나에 여러 데이터를 가져다 쓸 때 사용
 1. 상품목록 컴포넌트화
 2. 상품명 데이터바인딩 해보기
 3. 반복적인 부분은 map 반복문 써보기
+
+```javaScript
+import logo from './logo.svg';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import bg from './img/main_bg.jpg';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { useState } from "react";
+import data from './data.js';
+
+function App() {
+
+  let [ shop ] = useState(data)
+
+  return (
+    <div className="App">
+      <Navbar bg="light" variant="light">
+        <Container>
+          <Navbar.Brand href="#home">혜핑 <span className="sub_name">hyeping</span></Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+      <div className="main-bg" style={{backgroundImage : 'url('+ bg +')'}}></div>
+
+      <Row>
+        {/* <Card shop={shop[0]} i={1}></Card>
+        <Card shop={shop[1]} i={2}></Card>
+        <Card shop={shop[2]} i={3}></Card> */}
+        {
+          shop.map((a, i)=>{
+            return(
+              <Card shop={shop[i]} i={i+1}></Card>
+            )
+          })
+        }
+      </Row>
+    </div>
+  );
+}
+
+function Card(props){
+  return(
+    <Col xs>
+      <img src={process.env.PUBLIC_URL + '/main' + props.i + '.jpg'} width="80%"></img>
+      <h4>{props.shop.title}</h4>
+      <p>{props.shop.price}</p>
+    </Col>
+  )
+}
+
+export default App;
+
+```
