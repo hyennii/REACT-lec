@@ -3,7 +3,7 @@
   *return()안에 코드 짜야하는데, 병렬로 태그 2개 이상 기입 금지
   
 <h4>state 만드는 법</h4>
-- 자료 잠깐 저장할 때 lat, var 등 변수 쓸 수 있지만 state 써도 됨<br>
+- 자료 잠깐 저장할 때 let, var 등 변수 쓸 수 있지만 state 써도 됨<br>
 - useState 엔터치면 import { useState } from 'react'; 자동 작성됨<br>
 - useState 문법 사용하고 싶을 때, let [a,b] 왼쪽에 붙여서 자료 뽑으면 됨
 
