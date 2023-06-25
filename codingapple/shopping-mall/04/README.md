@@ -39,3 +39,29 @@
 
 *<h4>숙제</h4>*
 상세페이지 컴포넌트로 만들기
+
+```javaScript
+  function Detail(){
+    return(
+        <div className="container">
+            <div className="row">
+                <div className="col-md-6">
+                <img src="/main1.jpg" width="100%" />
+                </div>
+                <div className="col-md-6">
+                <h4 className="pt-5">댕 노즈워크</h4>
+                <p>숨겨진 간식을 찾으며 노는 후각 활동 놀이</p>
+                <p>250000원</p>
+                <button className="btn btn-danger">주문하기</button> 
+                </div>
+            </div>
+        </div> 
+    )
+}
+
+export default Detail;
+```
+
+```javaScript
+  <Route path="/detail" element={<Detail/>}/>
+```
