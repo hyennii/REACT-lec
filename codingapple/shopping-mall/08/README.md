@@ -57,6 +57,22 @@
 
 *<h4>숙제</h4>*
 Detail 페이지 방문 후 2초 지나면 div 숨기기
-```html
-  <div className=“alert alert-warning”>2초 이내 구매시 할인</div>
+```javaScript
+  function Detail(){
+
+  let [alert, setAlert] = useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{ setAlert(false) }, 2000)
+  })
+
+  return (
+  {
+    alert == true
+    ? <div className="alert alert-warning">
+        2초이내 구매시 할인
+      </div>
+    : null
+  }
+  )
+}
 ```
