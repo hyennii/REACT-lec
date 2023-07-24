@@ -1,5 +1,11 @@
 ## 좋아요 버튼 & 갯수 UI 만들기
 
+*<h4>터미널 내 warning 메세지 없애기</h4>*
+
+: /* eslint-disable */ 작성 기준의 하단 코드에서 노출되는 warning 메세지 제거가능
+
+-----------------------
+
 <h4>state 변경하기</h4>
 
 - state는 등호로 변경 금지
@@ -9,8 +15,10 @@
 ```
 
 ```javaScript
-  onClick={()=>{good변경()}}  //state 변경함수(새로운 state)
+  onClick={()=>{good변경()}}  //state 변경함수(새로운 state 값)
 ```
+
+* state 변경 써야 html 재렌더링 잘됨
 
 ------------------
 
