@@ -39,10 +39,10 @@
    - if문(자주쓰는 5개) 💢
    - ~~휴가~~
 - *8월 2주*
-   - localStorage(최근 본 상품기능)
-   - react-query
-   - lazy important
-   - 노마드로 js 틈틈이 제발
+   - localStorage(최근 본 상품기능)💢
+   - react-query💢
+   - lazy important💢
+   - ~~노마드로 js 틈틈이 제발~~
 - *8월 3주*
    - 리액트 강의 복습(틈틈)
    - 재랜더링 막는 memo
