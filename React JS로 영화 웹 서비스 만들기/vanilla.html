@@ -1,0 +1,23 @@
+<!--리액트로 작업하기 위해 선작업-->
+
+<!DOCTYPE html>
+
+<body>
+    <span>총 클릭: 0</span>
+    <button id="btn">누르세요</button>
+</body>
+</html>
+
+<script>
+    let counter = 0; //총 클릭 0부터 시작
+
+    const button = document.getElementById("btn");  //js에서 btn 가져오기
+    const span = document.querySelector("span");  //js에서 span 가져오기
+
+    function handleClick(){
+        counter = counter + 1;  //클릭 1씩 더해짐
+        span.innerText = `총 클릭: ${counter}`;  //페이지 반영(작동)
+    }
+
+    button.addEventListener("click", handleClick);   //click 이벤트 감지
+</script>
