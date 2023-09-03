@@ -26,13 +26,11 @@
 1. store.js 파일 생성, 하단 코드 복붙
 
 ```javaScript
-import {configureStore} from '@reduxJs/toolit'
+import { configureStore } from '@reduxjs/toolkit'
 
 export default configureStore({
-    reducer: {
-        
-    }
-})
+  reducer: { }
+}) 
 ```
 
 2. index.js가서 <Provider store={store}> 쓰기 (=store를 쓰겠다는 선언 해주기)
