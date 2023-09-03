@@ -17,6 +17,8 @@
 
 터미널에 npm install @reduxjs/toolkit react-redux 입력
 
+* package.json 파일 내 react, react-dom 버전 18.1.0 인지 확인 후 설치
+
 ----------------------------------
 
 <h4>셋팅</h4>
