@@ -1,7 +1,5 @@
-import {configureStore} from '@reduxJs/toolit'
+import { configureStore } from '@reduxjs/toolkit'
 
 export default configureStore({
-    reducer: {
-        
-    }
-})
+  reducer: { }
+}) 
